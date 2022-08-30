@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.block{
+    
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    overflow: hidden;
+}
+/* > прямой потомок */
+.block > div{
+    width: 800px;
+    background-color: rgb(107, 26, 118);
+    position: relative;
+    left: -50%;
+    z-index: 1;
+}
+
+.block > div:nth-child(2){
+    
+    left: -100%;
+    background-color: rgb(202, 92, 178);
+    clip-path: polygon(
+    65% 0%,
+    100% 50%,
+    65% 100%,
+    0% 100%,
+    35.0% 50.0%,
+    0% 0%);
+    width: 700px;
+    z-index: 2;
+    display: grid;
+    align-items: center;
+    
+    padding: 0 100px;
+}
+
+.block > div:nth-child(3){
+    width: 90vw;
+    left:-80% ;
+    background: url("https://images8.alphacoders.com/678/678621.jpg") 100% 50% / cover;
+    transition: all 0.5s ease-in-out;
+    z-index: 0;
+    
+}
+
+.line{
+    top: 10%;
+    bottom: 50%;
+    right: 25%;
+    transform: rotate(-28deg);
+    width: 2px;
+    background-color: aqua;
+    position: absolute;
+}
+
+
+
+.margin{
+    margin-left: 70px;
+}
+.margin:first-child{
+    margin-top: 70px;
+}
+
+.margin *:not(.margin){
+    margin-bottom: 70px;
+}
+.title{
+font-size: 32px;
+text-transform: uppercase;
+letter-spacing: 2px;
+color: aliceblue;
+}
+.title span:last-child{
+    display: block;
+    margin-left: 30px;
+    
+}
+.item{
+    max-width: 300px;
+    position: relative;
+    padding-left: 20px;
+    max-width: 200px;
+}
+
+.item::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 3px;
+    left: 0;
+    top: -20px;
+    height: 40px;
+    background-color: aqua;
+}
+
+
+@media (max-width:1350px) {
+    
+    .block > div:nth-child(3){
+  
+        width: 100vw;
+        transition: all 0.5s ease-in-out;
+    }
+
+}
+
+@media (max-width:1150px) {
+    
+    .block > div:nth-child(3){
+        left: -110%;
+        width: 80vw;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .block > div:nth-child(2){
+        padding:0 10px;
+        left: -150%;
+        width: 440px;
+        transition: all 0.5s ease-in-out;
+        
+    }
+
+    .line{
+        top: 10%;
+    bottom: 55%;
+    right: 25%;
+    transform: rotate(-19deg);
+    width: 2px;
+    }
+    
+    .title {
+        font-size: 32px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: aliceblue;
+        }
+
+}
+    
+
+
+@media (max-width:880px) {
+    .block > div:nth-child(3){
+        left: -110%;
+        width: 110vw;
+        transition: all 0.5s ease-in-out;
+    }
+    
+}
