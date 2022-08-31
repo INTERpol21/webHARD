@@ -12,7 +12,7 @@
   color: azure;
   padding: 60px 30px;
   display: grid;
-  grid-template-rows:auto 1fr;
+  grid-template-rows: auto 1fr;
 }
 
 .title {
@@ -22,73 +22,66 @@
 }
 
 .content {
-    display: grid;
-    align-content: end;
-    padding: 30px;
-    border-left: 3px outset rgb(159, 154, 154);
-    margin-top: 60px;
+  display: grid;
+  align-content: end;
+  padding: 30px;
+  border-left: 3px outset rgb(159, 154, 154);
+  margin-top: 60px;
 }
 .label {
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    font-size: 18px;
-    border-bottom: 1px solid wheat;
-
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 18px;
+  border-bottom: 1px solid wheat;
 }
 .description {
-    font-size: 14px;
-    letter-spacing: normal;
-    line-height: 1em;
-    opacity: 0.7;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 1em;
+  opacity: 0.7;
 }
 
 .block__right {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
-    padding: 60px;
-    grid-gap:60px 190px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  padding: 60px;
+  grid-gap: 60px 190px;
+  align-items: center;
 }
 .card {
-    display: grid;
-    justify-items: center;
+  display: grid;
+  justify-items: center;
 }
 .card__img {
-    width: 90px;
-    height: 100px;
-    background: #333;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    
+  width: 90px;
+  height: 100px;
+  background: #333;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
-.card__img svg{
-     display: inline-block;
-    margin: 10px;
-    padding-top: 10px;
-    
+.card__img svg {
+  display: inline-block;
+  margin: 10px;
+  padding-top: 10px;
 }
 
 .card__img path {
-
-   stroke: aqua;
+  stroke: aqua;
   stroke-width: 7;
-    transition: 0.8;    
-  
+  transition: 0.8;
 }
 .card__img path:hover {
-    stroke: rgb(248, 4, 4);
-  }
-     
+  stroke: rgb(248, 4, 4);
+}
 
 .card__title {
-    margin: 15px 0;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color:rgb(21, 71, 107);
-    font-size: 28px;
+  margin: 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: rgb(21, 71, 107);
+  font-size: 28px;
 }
 .card__desc {
-line-height: 1.4em;
-letter-spacing: 2px;
-
+  line-height: 1.4em;
+  letter-spacing: 2px;
 }

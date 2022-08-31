@@ -1,51 +1,51 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .block {
-    --shadow: 0 2px 4px rgba(35, 107, 202, 0.589);
-    height: 100vh;
-    color: aliceblue;
-    padding-top: 30vh;
-    padding-left: 15vw;
-    position: relative;
+  --shadow: 0 2px 4px rgba(35, 107, 202, 0.589);
+  height: 100vh;
+  color: aliceblue;
+  padding-top: 30vh;
+  padding-left: 15vw;
+  position: relative;
 }
 
 .bg {
-    background:#444 url("https://proza.ru/pics/2020/08/20/638.jpg") ;
-    /* выравнивание по центру и на заднем фоне */
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    background-position: center center;
-    position: absolute;
-    filter: hue-rotate(180deg);
-    background-size: cover;
+  background: #444 url("https://proza.ru/pics/2020/08/20/638.jpg");
+  /* выравнивание по центру и на заднем фоне */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-position: center center;
+  position: absolute;
+  filter: hue-rotate(180deg);
+  background-size: cover;
 }
 
 .title {
-    display: inline-block;
-    font-size: 4vw;
-    text-transform: uppercase;
-    letter-spacing:1vw ;
-    /* переменная тени из block */
-    text-shadow:var(--shadow);
-    position: relative;
+  display: inline-block;
+  font-size: 4vw;
+  text-transform: uppercase;
+  letter-spacing: 1vw;
+  /* переменная тени из block */
+  text-shadow: var(--shadow);
+  position: relative;
 }
 
-.title::after{
-    display: block;
-    /* Расположение линии и content"" сама линия */
-    height:0.4vw ;
-    content: "";
-    right: -8vw;
-    left: +4vw;
-    bottom: -1vw;
+.title::after {
+  display: block;
+  /* Расположение линии и content"" сама линия */
+  height: 0.4vw;
+  content: "";
+  right: -8vw;
+  left: +4vw;
+  bottom: -1vw;
 
-    box-shadow:var(--shadow);
-    background-color: rgba(87, 163, 230, 0.418);
-    position: absolute;
+  box-shadow: var(--shadow);
+  background-color: rgba(87, 163, 230, 0.418);
+  position: absolute;
 }
